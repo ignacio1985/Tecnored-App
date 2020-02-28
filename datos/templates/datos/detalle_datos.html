@@ -1,0 +1,15 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<div class="detalles-dato">
+    <div class="dato">
+        <h2>{{ dato.titulo }}</h2>
+        <img src="{{ dato.thumb.url }}">
+        <p>{{ dato.name }}</p>
+        <p>{{ dato.chrono }}</p>
+        <p>{{ dato.value }}</p>
+        <p>{{ dato.quality }}</p>
+        <p>{{ dato.date }}</p>
+    </div>
+</div>
+{% endblock %}
