@@ -1,15 +1,31 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-<div class="detalles-dato">
-    <div class="dato">
-        <h2>{{ dato.titulo }}</h2>
-        <img src="{{ dato.thumb.url }}">
-        <p>{{ dato.name }}</p>
-        <p>{{ dato.chrono }}</p>
-        <p>{{ dato.value }}</p>
-        <p>{{ dato.quality }}</p>
-        <p>{{ dato.date }}</p>
+<div class="row">
+    <div class="col-xs-12 detalles-dato">
+        <div class="row dato">
+            <div class="col-xs-12 tit">
+                <h2>{{ dato.titulo }}</h2>
+            </div>
+            <div class="col-xs-12 detalle-img">
+                <img src="{{ dato.thumb.url }}">
+            </div>
+            <div class="col-xs-12">
+                <p>name: {{ dato.name }}</p>
+            </div>
+            <div class="col-xs-12">
+                <p>chrono: {{ dato.chrono }}</p>
+            </div>
+            <div class="col-xs-12">
+                <p>value: {{ dato.value }}</p>
+            </div>
+            <div class="col-xs-12">
+                <p>quality: {{ dato.quality }}</p>
+            </div>
+            <div class="col-xs-12 fecha">
+                <p>Actualizado el {{ dato.date }}</p>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

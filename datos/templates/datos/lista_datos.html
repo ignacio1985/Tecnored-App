@@ -1,16 +1,18 @@
 {% extends 'base_layout.html' %} 
 
 {% block content %}
-    <h1>Lista Datos</h1>        
-    <div class="datos">
+<div class="row titulo-medidores">
+    <div class="col-xs-12">
+        <h1>Medidores</h1> 
+    </div> 
+</div> 
+<div class="row">  
+    <div class="col-xs-12 datos">
         {% for dato in datos %}
-            <div class="dato">
-                <h2><a href="{% url 'datos:detail' slug=dato.slug %}">{{ dato.titulo }}</a></h2>
-                <p>{{ dato.snippet }}</p>
-                <p>{{ dato.chrono }}}</p>
-                <p>{{ dato.value }}</p>
-                <p>{{ dato.quality }}</p>
+        <div class="dato">
+            <h2><a href="{% url 'datos:detail' slug=dato.slug %}">{{ dato.titulo }}</a></h2>
         </div>          
         {% endfor %}     
     </div>
+</div>   
 {% endblock %}      

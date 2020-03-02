@@ -1,6 +1,7 @@
 body{
-    background: blue;
-    color: #fff;
+    background: #eaeaea;
+    color: #ff9025;
+    font-family: 'Ubuntu';
 }
 
 h1, h2, h3, h4, h5{
@@ -13,3 +14,193 @@ a, a:hover, a:visited{
     text-decoration: none;
 }
 
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+div.wrapper h1{
+    text-align: center;
+    margin: 100px auto;
+    font-size: 2.4 em;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+
+nav{
+    justify-self: end;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+    color: #ff9025;
+}
+
+nav button{
+    background: none;
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+}
+
+.datos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.dato{
+    padding: 10px;
+    border: 1px solid #ff9025;
+    position: relative;
+    padding-bottom: 40px;
+    background-color: #ff9025;  
+}
+
+.dato h2{
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.detalles-dato{
+    color: #fff;
+}
+
+.detalles-dato .dato{
+    padding: 0;
+}
+
+.detalles-dato .dato img{
+    width: 125px;
+    height: 125px;
+    justify-content: center;
+}
+
+.detalles-dato .dato h2{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+}
+
+.detalles-dato .dato p{
+    text-align: center;
+}
+
+.site-form{
+    margin-top: 20px;
+    border: 1px solid #ff9025;
+    padding: 20px;
+}
+
+.site-form input{
+    width: 280px;
+}
+
+.site-form label{
+    margin: 10px;
+}
+
+.site-form input, .site-form textarea{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.helptext, .helptext ul{
+    margin: 0 auto 20px;
+    color: #bbb;
+    font-size: 0.9em;
+    display: block;
+}
+
+.errorlist li{
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #ff9025;
+    color: #ff9025;
+    margin: 10px 0;
+}
+
+.errorlist{
+    padding: 0;
+}
+
+.site-form input[type="submit"]{
+    background: #ff9025;
+    border: 0;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.container-fluid{
+    margin-top: 50px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.titulo-logo{
+    text-align: center;
+    color: #ff5722;
+}
+
+.titulo-medidores{
+    text-align: center;
+    color: #ff9025;
+    margin-bottom: 20px;
+}
+
+.logout-button{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.logout-button .logout-link button{
+    background: #ffbb31;
+    border: 0;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.detalle-img{
+    text-align: center;
+}
+
+.fecha{
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.detalles-dato .tit{
+    font-size: 26px;
+}
+
+@media (max-width:48em){
+
+    .datos {
+        grid-template-columns: 1fr;
+    }
+
+    .detalles-dato .tit{
+        font-size: 18px;
+    }
+
+}
