@@ -190,7 +190,7 @@ nav button{
 }
 
 .detalles-dato .tit{
-    font-size: 26px;
+    font-size: 20px;
 }
 
 @media (max-width:48em){
@@ -200,7 +200,7 @@ nav button{
     }
 
     .detalles-dato .tit{
-        font-size: 18px;
+        font-size: 16px;
     }
 
 }
